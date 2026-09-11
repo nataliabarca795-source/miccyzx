@@ -2336,13 +2336,13 @@ local function Script1Configure(obj)
             local parent = obj.Parent
             if parent and parent:IsA("GuiObject") and not Script1MovedParents[parent] then
                 Script1MovedParents[parent] = parent.Position
-                parent.Position = parent.Position + UDim2.new(0, 0, 0, 35)
+                parent.Position = parent.Position + UDim2.new(0, 0, 0, 20)
             end
         end
 
         if string.match(text, "%dm%s*%d+s") and not Script1MovedLabels[obj] then
             Script1MovedLabels[obj] = obj.Position
-            obj.Position = obj.Position + UDim2.new(0, 0, 0, 35)
+            obj.Position = obj.Position + UDim2.new(0, 0, 0, 20)
         end
     end
 
@@ -2387,7 +2387,7 @@ ToolsTab:CreateToggle({
             Script1Start()
             Rayfield:Notify({
                 Title = "XP / Timer Position",
-                Content = "ativado — movendo 35 pixels para baixo.",
+                Content = "ativado — movendo 20 pixels para baixo.",
                 Duration = 3
             })
         else
