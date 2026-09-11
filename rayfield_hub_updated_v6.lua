@@ -2216,7 +2216,7 @@ movidosPais[pai] = true
 	
 	
 	
-pai.Position = pai.Position + UDim2.new(0, 0, 0, 35)
+pai.Position = pai.Position + UDim2.new(0, 0, 0, 20)
 
 
 	
